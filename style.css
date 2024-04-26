@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 10%;
+    position: relative;
+}
+
+.logo {
+    width: 130px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.content p {
+    font-size: 25px;
+}
+.content h1 span {
+    color: blueviolet;
+}
+
+.content button {
+    font-size: 15px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+    display: flex;
+    padding: 10px 25px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content button img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.launch-time {
+    display: flex;
+}
+
+.launch-time div {
+    flex-basis: 100px;
+}
+
+.launch-time div p {
+    font-size: 50px;
+    margin-bottom: -3px;
+}
+
+.rocket {
+    width: 250px;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    animation: flight 4s linear infinite;
+}
+
+@keyframes flight {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 110%;
+        opacity: 1;
+    }
+}
