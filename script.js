@@ -1,4 +1,4 @@
-let launchDate = new Date("Apr 30, 2024 00: 00: 00").getTime();
+let launchDate = new Date("May 31, 2024 00: 00: 00").getTime();
 
 let x = setInterval( function() {
     let currentTime = new Date().getTime();
